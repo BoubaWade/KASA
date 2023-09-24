@@ -1,0 +1,43 @@
+.card{
+    background: linear-gradient(#FFFFFF 0%, #000000 100%);
+    flex: 1 0 30%;
+    min-width: 300px;
+    max-width: 350px;
+    max-height: 350px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.2s ease;
+    .card-image{
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        object-fit: cover;
+    }
+    .card-title-location{
+        font-size: .9rem;
+        color:#ffffff;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+    }
+    &:hover{
+        transform: scale(1.03);
+        .card-image{
+            opacity: 0.8;
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .card{
+    max-width: none;
+    width: 100%;
+    min-height: none;
+    }
+ }
+@media screen and (max-width: 320px){
+    .card{
+    min-height: none;
+    height: 250px;
+    }
+ }

@@ -1,0 +1,68 @@
+.page404-container {
+  font-family: "Montserrat", sans-serif;
+  .header {
+    width: 87%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-container {
+    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 110px;
+    color: #ff6060;
+    h1 {
+      font-size: calc(10rem - 1vw);
+      font-weight: 700;
+      margin: 100px 0 20px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: center;
+      margin: 10px 0 80px;
+    }
+    a {
+      color: #ff6060;
+      font-size: 0.9rem;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .page404-container {
+    .main-container {
+      h1 {
+        font-size: 5rem;
+        font-weight: 700;
+        margin: 100px 0 20px;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      a {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .page404-container {
+    .main-container {
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 100px 0 20px;
+      }
+      h2 {
+        font-size: 0.9rem;
+      }
+      a {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

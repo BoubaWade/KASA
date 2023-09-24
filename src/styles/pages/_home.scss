@@ -1,0 +1,49 @@
+@import "../components/banner.scss";
+@import "../components/Card.scss";
+
+.home-container {
+  font-family: "Montserrat", sans-serif;
+  .header {
+    width: 87%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cards-container {
+    width: 87%;
+    background: #f6f6f6;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    list-style-type: none;
+    margin: 30px auto;
+    padding: 50px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-container {
+    .cards-container {
+      margin: auto;
+      background: #fff;
+      gap: 40px;
+      padding: 0 0 30px;
+    }
+  }
+}
+@media screen and (max-width: 530px) {
+  .home-container {
+    .cards-container {
+      width: 92%;
+
+      gap: 20px;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .home-container {
+    .cards-container {
+      column-gap: 0;
+    }
+  }
+}
