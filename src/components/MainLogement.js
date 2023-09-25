@@ -1,18 +1,12 @@
 import React from "react";
 import Carrousel from "./Carrousel";
 import TagName from "./TagName";
-import { STARS_ACTIVE, STARS_INACTIVE } from "../constants/starsConstants";
 import DropDownLarge from "./DropDownLarge";
 import TitleLogement from "./TitleLogement";
 import ProfileHost from "./ProfileHost";
+import Stars from "./Stars";
 
 const MainLogement = ({ dataFiltered }) => {
-  const starsActive = STARS_INACTIVE.slice(
-    0,
-    STARS_ACTIVE.length - dataFiltered.rating
-  );
-  const starsInactive = STARS_ACTIVE.slice(0, dataFiltered.rating);
-  
   return (
     <section className="main-container">
       <Carrousel key={dataFiltered.id} pictures={dataFiltered.pictures} />
@@ -25,16 +19,7 @@ const MainLogement = ({ dataFiltered }) => {
             <TagName key={tag} tag={tag} />
           ))}
         </ul>
-
-        <ul className="stars">
-          {starsInactive.map((star) => (
-            <img key={crypto.randomUUID()} src={star} alt="" />
-          ))}
-          {starsActive.map((star) => (
-            <img key={crypto.randomUUID()} src={star} alt="" />
-          ))}
-        </ul>
-
+        <Stars dataFiltered={dataFiltered} />
         <div className="description-container">
           <DropDownLarge
             title="Description"

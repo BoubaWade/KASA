@@ -13,8 +13,8 @@ const PageLogement = () => {
       {dataFiltered ? (
         <div className="logement-container">
           <Header />
-          <MainLogement dataFiltered={dataFiltered}/>
-            <Footer />
+          <MainLogement dataFiltered={dataFiltered} />
+          <Footer />
         </div>
       ) : (
         <Page404 />
