@@ -18,7 +18,7 @@ npm install
 
 npm start
 
-Your app KASA should be running at [http://localhost:3000](http://localhost:3000 and will be opened it in your browser.
+Your app KASA should be running at [http://localhost:3000](http://localhost:3000) and will be opened it in your browser.
 
 # Pages of KASA app
 
