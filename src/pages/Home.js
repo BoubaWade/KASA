@@ -1,4 +1,3 @@
-//import imgBanner from "../assets/images/img-banner.png";
 import React from "react";
 import datas from "../datas/datas";
 import Header from "../components/Header";
